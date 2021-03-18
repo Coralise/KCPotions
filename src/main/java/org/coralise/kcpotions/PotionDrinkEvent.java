@@ -38,7 +38,7 @@ public class PotionDrinkEvent implements Listener {
         player.teleport(loc);
         player.playSound(player.getLocation(), Sound.ENTITY_PLAYER_LEVELUP, SoundCategory.PLAYERS, 1, 0);
 
-        Bukkit.getScheduler().runTaskLater(m, () -> { player.getInventory().removeItem(new ItemStack(Material.GLASS_BOTTLE, 1)); }, 2);
+        Bukkit.getScheduler().runTaskLater(m, () -> { player.getInventory().removeItem(new ItemStack(Material.GLASS_BOTTLE, 1)); }, 1);
 
     }
     
