@@ -1,0 +1,17 @@
+name: KCPotions
+version: 1.0
+main: org.coralise.kcpotions.KCPotions
+api-version: 1.16
+author: Coralise
+prefix: "KCP"
+commands:
+  givepotion:
+  gp:
+  potionssetteleport:
+  potionssettp:
+  pstp:
+permissions:
+  kcpotions.givepotion:
+    default: op
+  kcpotions.setteleport:
+    default: op
