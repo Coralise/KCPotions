@@ -21,7 +21,6 @@ public class PotionDrinkEvent implements Listener {
     public void onPotionDrink(PlayerItemConsumeEvent event){
         
         ItemStack item = event.getItem();
-        Location loc = new Location(Bukkit.getWorld("world"), 0, 90, 0);
 
         if(!item.getItemMeta().getLocalizedName().startsWith("kcp")) return;
 
@@ -30,12 +29,11 @@ public class PotionDrinkEvent implements Listener {
         switch(item.getItemMeta().getLocalizedName()){
 
             case "kcp drink me potion":
-                loc = drinkMePotionLoc;
+                player.teleport(drinkMePotionLoc);
                 break;
 
         }
 
-        player.teleport(loc);
         player.playSound(player.getLocation(), Sound.ENTITY_PLAYER_LEVELUP, SoundCategory.PLAYERS, 1, 0);
 
         Bukkit.getScheduler().runTaskLater(m, () -> { player.getInventory().removeItem(new ItemStack(Material.GLASS_BOTTLE, 1)); }, 1);
