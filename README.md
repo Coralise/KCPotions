@@ -1,5 +1,8 @@
 # KCPotions
 
+#### Potion List:
+- DrinkMePotion
+
 #### Commands:
 - /givepotion <potion> <player> [amount] - Gives player a potion x amount.
   - aliases: /gp
