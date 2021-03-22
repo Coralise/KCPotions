@@ -1,4 +1,4 @@
-# KCPotions
+# KCPotions - Made for the KingsCraft Server
 
 #### Potion List:
 - DrinkMePotion
